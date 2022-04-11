@@ -1,7 +1,7 @@
-from tkinter import image_names
+
 import requests
 import urllib.request
-from PIL import Image
+
 from bs4 import BeautifulSoup
 
 URL = "https://www.google.com/search?q=alma+bag+louis+vuitton&tbm=isch&ved=2ahUKEwi8wtqU0oz3AhUI3RoKHRwTBLAQ2-cCegQIABAA&oq=alma+bag&gs_lcp=CgNpbWcQARgBMgUIABCABDIECAAQHjIECAAQHjIECAAQHjIECAAQHjIECAAQHjIECAAQHjIECAAQHjIECAAQHjIECAAQHjoKCCMQ7wMQ6gIQJzoHCCMQ7wMQJzoECAAQQzoICAAQsQMQgwE6CAgAEIAEELEDOgQIABADOgsIABCABBCxAxCDAVDzBViZF2DAJmgBcAB4AIABN4gBrQOSAQE5mAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=tXNUYvyTKIi6a5ymkIAL"
