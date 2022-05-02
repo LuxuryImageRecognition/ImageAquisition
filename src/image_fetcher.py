@@ -18,16 +18,12 @@ class ImageFetcher:
 
     def get_images_links(self):
         page = requests.get(self.url)
-
         soup = BeautifulSoup(page.content, 'html.parser')
-        print(soup.prettify())
-        file = open("test/image.html")
-        file.write(str(soup.prettify()))
-        file.close()
-    #     image_tags = soup.find_all('img', class_ = "yWs4tf")
+        image_tags = soup.find_all('img', class_ = "yWs4tf")
 
-    #     for image_tag in image_tags:
-    #         self.img_urls.append(image_tag["src"])
+        for image_tag in image_tags:
+            print(image_tag["src"])
+            self.img_urls.append(image_tag["src"])
 
 
     # def download_image(self):
