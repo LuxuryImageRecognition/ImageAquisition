@@ -10,3 +10,4 @@ fetcher.make_url("louis vuitton", "alma bag")
 
 fetcher.get_images_links()
 
+fetcher.download_images("images")

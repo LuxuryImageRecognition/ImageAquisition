@@ -15,6 +15,7 @@ class ImageFetcher:
         url = "https://www.google.co.in/search?q={} {}&source=lnms&tbm=isch".format(brand, model)
         url = url.replace(" ", "%")
         self.url = url
+        print(url)
 
     def get_images_links(self):
         page = requests.get(self.url)
@@ -26,5 +27,12 @@ class ImageFetcher:
             self.img_urls.append(image_tag["src"])
 
 
-    # def download_image(self):
-    #     None
+    def download_images(self, output_folder):
+        for url in self.img_urls:
+            if not os.path.exists(output_folder):
+                os.makedirs(output_folder)
+            image_name = url.split("tbn:")[1]
+            urllib.request.urlretrieve(url, "images/{}.jpg".format(image_name))
+
+
+
