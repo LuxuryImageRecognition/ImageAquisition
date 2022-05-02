@@ -12,6 +12,8 @@ page = requests.get(URL)
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
+
+
 def download_images(url):
     if not os.path.exists(OUTPUT_FOLDER):
         os.makedirs(OUTPUT_FOLDER)
