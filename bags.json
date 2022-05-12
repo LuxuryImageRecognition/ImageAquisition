@@ -1,10 +1,43 @@
 [
     {
-        "brand": "Chanel",
+        "brand": "Hermes",
+        "model": "Kelly"
+    },
+    {
+        "brand": "Dior",
+        "model": "Saddle Bag"
+    },
+    {
+        "brand": "Louis Vuitton",
+        "model": "Alma"
+    },
+    {
+        "brand": "Jaquemus",
+        "model": "Chiqitos"
+    },
+    {
+        "brand": "Fendi",
+        "model": "Fendi First"
+    },
+    {
+        "brand": "Channel",
         "model": "Wallet on Chain"
     },
     {
-        "brand": "Chanel",
-        "model": "Wallet on Chain"
+        "brand": "Balenciaga",
+        "model": "Le cagole"
+    },
+    {
+        "brand": "Bottega Venera",
+        "model": "Kettleball"
+    },
+    {
+        "brand": "Prada",
+        "model": "Galleria"
+    },
+    {
+        "brand": "Alexander McQueen",
+        "model": "The Curve"
     }
 ]
+

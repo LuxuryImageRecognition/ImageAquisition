@@ -43,13 +43,14 @@ class ImageFetcher:
                     print("Neither src or data-src was found in the tag")
         print("{} images urls has been found".format(len(self.img_urls)))
 
-    def download_images(self, output_folder):
+    def download_images(self, output_folder, bag_name):
+        image_id = 0
         for url in self.img_urls:
-            if not os.path.exists(output_folder):
-                os.makedirs(output_folder)
-            #image_name = url.split("tbn:")[1]
-            image_name = str(random.randint(1, 1000))
-            urllib.request.urlretrieve(url, "images/img_{}.jpg".format(image_name))
+            image_id= image_id+1
+            bag_path = "{}/{}".format(output_folder, bag_name)
+            if not os.path.exists(bag_path):
+                os.makedirs(bag_path)
+            urllib.request.urlretrieve(url, "images/{}/img_{}.jpg".format(bag_name, image_id))
 
 
 
