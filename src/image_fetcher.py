@@ -28,6 +28,7 @@ class ImageFetcher:
         return html
 
     def get_images_links(self):
+        self.img_urls = []
         html = self.get_html()
         print("Get HTML from url")
         soup = BeautifulSoup(html, 'html.parser')
