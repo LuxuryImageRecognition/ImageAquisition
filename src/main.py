@@ -9,7 +9,8 @@ fetcher = ImageFetcher()
 for conf in bags_conf:
     print(conf)
     fetcher.make_url(conf["brand"], conf["model"])
-    fetcher.get_images_links()
+    #fetcher.get_images_links()
     bag_name = "{}_{}".format(conf["brand"], conf["model"])
-    fetcher.download_images("images",bag_name)
+    #fetcher.download_images("images", bag_name)
+    fetcher.export_gcs("image_cleaning", bag_name)
 
